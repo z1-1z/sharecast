@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.setting.AboutViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:paddingTop="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:clickable="true"
+            android:src="@drawable/black_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MiddleTitle"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:text="@string/str_about_app" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_huger"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_super_small"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_little" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:gravity="center"
+            android:text="@{viewModel.version}"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_micro" />
+
+    </RelativeLayout>
+</layout>

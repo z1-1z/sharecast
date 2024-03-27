@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.video.AppItemViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/web_item_height"
+        android:background="@{viewModel.icon}"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_micro"
+            android:typeface="normal"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</layout>

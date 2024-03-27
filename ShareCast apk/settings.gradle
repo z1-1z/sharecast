@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        google()
+        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://jitpack.io" }
+
+    }
+}
+rootProject.name = "ShareCast"
+include ':app'
+include ':dlna'
+include ':magicindicator'

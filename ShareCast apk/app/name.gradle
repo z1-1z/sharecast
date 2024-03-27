@@ -1,0 +1,205 @@
+/********************* 备注 *****************************/
+/**
+ * 将此文件拷贝到应用module的根目录，在此module的build.gradle里面引入apply from: 'name.gradle'
+ */
+import java.text.SimpleDateFormat
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+ext {
+    android = [
+            versionName: getAppVersionName()
+    ]
+}
+
+android {
+    defaultConfig {
+        versionCode getAppVersionCode()
+        versionName getAppVersionName()
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def name = getAppName(variant) + "_" + getAppVersionName()
+            if (!getBuildType(variant).equals("")) {
+                name = name + "_" + getBuildType(variant)
+            }
+            if (!getCustomerName(variant).equals("")) {
+                name = name + "_" + getCustomerName(variant)
+            }
+            if (!getClientType().equals("")) {
+                name = name + "_" + getClientType()
+            }
+            if (!getABI(variant).equals("")) {
+                name = name + "_" + getABI(variant)
+            }
+            outputFileName = name + ".apk"
+        }
+    }
+}
+
+/**
+ * 获取应用名称
+ * @return 应用名称
+ */
+static def getAppName(variant) {
+
+    return "trans2iot"
+}
+
+/**
+ * 获取主版本号
+ * @return
+ */
+static def getMajorVersion() {
+    return 1
+}
+
+/**
+ * 获取子版本号
+ * @return
+ */
+static def getMinorVersion() {
+    return 0
+}
+
+/**
+ * 获取阶段版本号
+ * @return
+ */
+def getAppVersionCode() {
+    def versionCode = getSvnVersionCode()
+    if (versionCode == 0) {
+        versionCode = getGitVersionCode()
+    }
+    if (versionCode == 0) {
+        versionCode = 1
+    }
+    return versionCode
+}
+
+/**
+ * 读取当前分支最近的一次git tag
+ * @return tag
+ */
+def getGitTag() {
+    try {
+        def process = ("git describe --abbrev=0 --tags").execute()
+        def tag = process.text.trim()
+        return tag
+    } catch (e) {
+        println e.getMessage()
+    }
+    return 0
+}
+
+/**
+ * 以tag提交的数量作为其版本号
+ * @return
+ */
+def getGitVersionCode() {
+    try {
+        def process = ("git tag -l").execute()
+        def tags = process.text.split('\n')
+        return tags.size() + 1
+    } catch (e) {
+        println e.getMessage()
+    }
+    return 0
+}
+
+/**
+ * 根据svn提交版本生成版本号
+ * @return
+ */
+def getSvnVersionCode() {
+    try {
+        def process = ("svnversion -c " + getRootDir().absolutePath).execute()
+        process.waitFor()
+        def version = process.in.text
+        Pattern pattern = Pattern.compile("(\\d+:)?(\\d+)\\D")
+        Matcher matcher = pattern.matcher(version)
+        if (matcher.find()) {
+            version = matcher.group(matcher.groupCount())
+        }
+        return Integer.parseInt(version)
+    } catch (e) {
+        println e.getMessage()
+    }
+    return 0
+}
+
+/**
+ * 获取版本名
+ * @return
+ */
+def getAppVersionName() {
+    return getMajorVersion() + "." + getMinorVersion() + "." + getAppVersionCode() + "_" + getDate()
+}
+
+/**
+ * 获取日期
+ * @return
+ */
+static def getDate() {
+    return new SimpleDateFormat("MMddyyyy").format(new Date())
+}
+
+/**
+ * 获取终端类型
+ * @return 终端类型，可以为空字符串
+ */
+static def getClientType() {
+    return "phone"
+}
+
+/**
+ * 获取编译类型
+ * @param variant
+ * @return
+ */
+static def getBuildType(variant) {
+    if (variant.buildType.name.equals("release")) {
+        return ""
+    } else {
+        return variant.buildType.name
+    }
+}
+
+/**
+ * 获取客户名，本例使用了二维flavorDimensions，其中第一个维度表示客户名，其他实现方式可自行定义
+ * @param variant
+ * @return
+ */
+static def getCustomerName(variant) {
+    def customer = ""
+    if (variant.productFlavors.size() > 0) {
+        customer = variant.productFlavors.get(0).name
+    }
+    if (customer.equals('common')) {
+        customer = "co"
+    }
+    return customer
+}
+
+/**
+ * 获取ABI类型，本例使用了二维flavorDimensions，其中第二个维度表示ABI类型，其他实现方式可自行定义
+ * @param variant
+ * @return
+ */
+static def getABI(variant) {
+    def buildName = ""
+    if (variant.productFlavors.size() > 1) {
+        buildName = variant.productFlavors.get(1).name
+    }
+    if (buildName.equals('armv7')) {
+        buildName = "armeabi-v7a"
+    } else if (buildName.equals('arm64')) {
+        buildName = "arm64-v8a"
+    } else if (buildName.equals('x86')) {
+        buildName = "x86"
+    } else if (buildName.equals('abi')) {
+        buildName = ""
+    }
+    return buildName
+}

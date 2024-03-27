@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.web.BaseCastViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/web_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/control_plant_bg">
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginEnd="@dimen/margin_super_micro"
+            android:text="@{viewModel.startTimeLiveData}"
+            android:textColor="@color/white"
+            android:visibility="@{viewModel.isShowSeekBar ? View.VISIBLE : View.GONE}"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="00:28:20" />
+
+        <SeekBar
+            android:id="@+id/progressBar_player"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/video_control_seekbar_margin_top"
+            android:layout_height="@dimen/video_control_seek_bar_height"
+            android:layout_toStartOf="@+id/tv_end_time"
+            android:layout_toEndOf="@+id/tv_start_time"
+            android:visibility="@{viewModel.isShowSeekBar ? View.VISIBLE : View.GONE}"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progress="@{viewModel.progressLiveData}"
+            android:progressDrawable="@drawable/strength_progress_drawable"
+            android:thumb="@drawable/progress_round" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_super_micro"
+            android:layout_marginEnd="@dimen/margin_little"
+            android:visibility="@{viewModel.isShowSeekBar ? View.VISIBLE : View.GONE}"
+            android:text="@{viewModel.endTimeLiveData}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="00:28:20" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar_player"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bt_miracast_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RippleBtnStyle"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:src="@drawable/cast_icon"
+                android:visibility="@{viewModel.miracastMediaEnable ? View.VISIBLE : View.GONE}"/>
+
+            <ImageView
+                android:id="@+id/bt_miracast_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RippleBtnStyle"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:src="@drawable/cast_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/bt_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RippleBtnStyle"
+                android:src="@{viewModel.playStatusLiveData ? @drawable/play_icon : @drawable/pause_icon}" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

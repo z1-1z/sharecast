@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.device.DeviceItemModel" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/device_item_height"
+        app:setSelected="@{viewModel.isSel}"
+        android:background="@drawable/device_bg_selector"
+        tools:context=".device.DeviceFragment">
+
+        <ImageView
+
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_super_small"
+            android:src="@{viewModel.isOnline ? @drawable/device_icon_on_line : @drawable/device_icon_offline}" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_icon"
+            android:layout_marginStart="@dimen/margin_micro"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:duplicateParentState="true"
+            android:gravity="start"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/device_title_text_color_selector"
+            android:textSize="@dimen/text_size_little"
+            tools:text="device_001" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginStart="@dimen/margin_micro"
+            android:layout_marginTop="@dimen/margin_super_tiny"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:gravity="start"
+            android:text="@{viewModel.sn}"
+            android:textColor="@color/device_secondary_title_text_color_selector"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="SN:SD4567J6789" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_title2"
+            android:layout_marginStart="@dimen/margin_super_micro"
+            android:layout_toEndOf="@+id/tv_title2"
+            android:background="@drawable/device_sel_sign_bg"
+            android:gravity="start"
+            android:textColor="@color/device_sel_sign_text_color"
+            android:textSize="@dimen/text_size_super_micro"
+            android:paddingStart="@dimen/padding_tiny"
+            android:paddingEnd="@dimen/padding_tiny"
+            android:visibility="@{viewModel.isSel ? View.VISIBLE : View.GONE}"
+            android:text="@string/str_casting" />
+
+
+        <ImageView
+            android:id="@+id/iv_cast_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_super_little"
+            android:src="@drawable/devices_share_icon"
+            android:visibility="@{viewModel.isSel ? View.VISIBLE : View.GONE}" />
+
+    </RelativeLayout>
+</layout>

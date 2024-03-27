@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--MainActivity-->
+    <color name="tab_indicator_color">#1E95D3</color>
+    <color name="top_text_color">#282828</color>
+    <color name="bg_color">#F7F7F7</color>
+
+    <color name="play_list_name_text_color">#ff090204</color>
+
+    <color name="common_selected_color">#2369DB</color>
+    <color name="common_unselected_color">#C9C9C9</color>
+
+    <color name="split_line_color">#E6E6E6</color>
+</resources>

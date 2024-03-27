@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.web.BaseCastViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:paddingTop="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:src="@drawable/black_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MiddleTitle"
+            android:text="@string/str_video_app_player" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_title"
+            android:progressDrawable="@drawable/strength_progress_drawable"
+            android:visibility="invisible" />
+
+        <com.intelligent.share.widget.ObservableWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg_color"
+            android:layout_below="@+id/progressBar"
+            android:layout_marginBottom="@dimen/margin_super_super_huge"/>
+
+        <include
+            android:id="@+id/rl_bottom_bar"
+            app:viewModel="@{viewModel}"
+            layout="@layout/video_control" />
+
+    </RelativeLayout>
+</layout>

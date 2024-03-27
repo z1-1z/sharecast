@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/split_line_color">  <!-- 点击后水波纹的颜色效果 -->
+    <item>
+
+        <!-- 默认显示的颜色效果 -->
+        <shape>
+            <corners android:radius="1dp" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</ripple>

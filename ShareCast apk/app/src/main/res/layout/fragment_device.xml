@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.device.DeviceViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".device.DeviceFragment">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/BigTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_all_devices" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            style="@style/MiddleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_super_small"
+            android:gravity="end"
+            android:text="@string/str_history" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_devices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/margin_big"
+            android:visibility="@{viewModel.deviceList.size() > 0 ? View.VISIBLE :View.GONE}" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_search_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_huge"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_search_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_4"
+                    android:alpha="0"/>
+
+                <ImageView
+                    android:id="@+id/iv_search_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_3"
+                    android:alpha="0"/>
+
+                <ImageView
+                    android:id="@+id/iv_search_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_2"
+                    android:alpha="0"/>
+
+                <ImageView
+                    android:id="@+id/iv_search_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_1" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_super_small"
+                android:text="@string/str_searching_for_device"
+                android:textColor="@color/secondary_title_color_nor"
+                android:textSize="@dimen/text_size_supper_little" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

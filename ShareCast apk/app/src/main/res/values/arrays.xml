@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Internet Content -->
+    <array name="contents">
+        <item>@array/movies</item>
+    </array>
+
+    <array name="movies">
+        <item name="title">Movie</item>
+        <item>@array/movie_list</item>
+    </array>
+
+
+    <array name="movie_list">
+        <item>@array/youTube</item>
+        <item>@array/twitch</item>
+        <item>@array/dailymotion</item>
+        <item>@array/megogo</item>
+        <item>@array/vidio</item>
+        <item>@array/muz1</item>
+        <item>@array/m24</item>
+        <item>@array/kinogo</item>
+        <item>@array/alarab</item>
+        <item>@array/IReadarabic</item>
+        <item>@array/ted</item>
+        <item>@array/liveleak</item>
+        <item>@array/kinokrad</item>
+    </array>
+
+
+
+    <string-array name="youTube">
+        <item name="imgPath">@drawable/youtube</item>
+        <item name="url">https://www.youtube.com</item>
+        <item name="match">videoplayback|m3u8</item>
+    </string-array>
+
+    <string-array name="twitch">
+        <item name="imgPath">@drawable/twitch</item>
+        <item name="url">https://www.twitch.com</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+
+    <string-array name="dailymotion">
+        <item name="imgPath">@drawable/web_dailymotion</item>
+        <item name="url">https://www.dailymotion.com</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="megogo">
+        <item name="imgPath">@drawable/web_megogo</item>
+        <item name="url">https://www.megogo.net</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="vidio">
+        <item name="imgPath">@drawable/web_vidio</item>
+        <item name="url">https://www.vidio.com/</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="muz1">
+        <item name="imgPath">@drawable/web_muz1</item>
+        <item name="url">https://www.muz1.tv</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="m24">
+        <item name="imgPath">@drawable/web_m24</item>
+        <item name="url">https://tv.m24.ru/</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="kinogo">
+        <item name="imgPath">@drawable/web_kinogo</item>
+        <item name="url">https://kinogo.zone/</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="alarab">
+        <item name="imgPath">@drawable/web_alarab</item>
+        <item name="url">https://ramadan2021.alarab.com/view-1/%D8%A7%D9%81%D9%84%D8%A7%D9%85-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="IReadarabic">
+        <item name="imgPath">@drawable/web_i_read_arabic</item>
+        <item name="url">https://free.ireadarabic.com/ar/Videos</item>
+        <item name="match">mp4</item>
+    </string-array>
+
+    <string-array name="ted">
+        <item name="imgPath">@drawable/web_ted</item>
+        <item name="url">https://www.ted.com/</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+    <string-array name="liveleak">
+        <item name="imgPath">@drawable/web_liveleak</item>
+        <item name="url">http://www.liveleak.com/</item>
+        <item name="match">mp4</item>
+    </string-array>
+
+    <string-array name="kinokrad">
+        <item name="imgPath">@drawable/web_kinokrad</item>
+        <item name="url">http://https://kinokrad.co/</item>
+        <item name="match">m3u8</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.bin.BinItemModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/common_tip_window_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/window_bg"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_little"
+                android:gravity="start"
+                android:text="@string/str_prompt"
+                android:textColor="@color/secondary_title_color_nor"
+                android:textSize="@dimen/text_size_supper_little" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_super_big_v"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_super_big_v"
+                android:gravity="start"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/text_size_little"
+                android:text="@string/str_push_bin_file_tip" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_little"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="112dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/cancel_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/color_grey"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="112dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:background="@drawable/video_cyan_button"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/text_size_little" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_marginStart="@dimen/margin_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/popup_prompt_icon" />
+
+    </RelativeLayout>
+
+
+</layout>

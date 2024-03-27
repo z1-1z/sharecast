@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.bin.BinItemModel" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bin_file_item_height"
+        android:layout_marginStart="@dimen/margin_little"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_marginEnd="@dimen/margin_little"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:background="@drawable/device_bg_nor"
+        android:padding="@dimen/padding_super_little">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_bin_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_toStartOf="@+id/tv_size"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:gravity="start"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/text_size_little"
+            tool:text="Format File" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:gravity="start"
+            android:text="@{viewModel.time}"
+            android:textColor="@color/secondary_title_color_nor"
+            android:textSize="@dimen/text_size_micro"
+            tool:text="2023-05-06" />
+
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_micro"
+            android:layout_toStartOf="@+id/iv_arrow"
+            android:text="@{viewModel.size}"
+            android:textColor="@color/secondary_title_color_nor"
+            android:textSize="@dimen/text_size_micro"
+            tool:text="3.9M" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_more_icon" />
+
+    </RelativeLayout>
+
+</layout>

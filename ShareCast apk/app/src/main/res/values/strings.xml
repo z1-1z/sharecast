@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">trans2iot</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="str_device">Device</string>
+    <string name="str_video">Video</string>
+    <string name="str_local_video">Local Video</string>
+    <string name="str_setting">Setting</string>
+    <string name="str_all_devices">All devices</string>
+    <string name="str_searching_for_device">Searching for Device……</string>
+    <string name="str_casting">Share Casting</string>
+
+    <string name="ConnectUnkonwnError">Unknown connection error.</string>
+    <string name="ServerNotResponse">Device no response…</string>
+    <string name="NetworkNotReachable">Network unreachable…</string>
+    <string name="IpNotVaild">IP address is invalid.</string>
+    <string name="IpError">IP address is error.</string>
+    <string name="str_device_is_full">The connections of Device is already maximum!</string>
+    <string name="device_connect_data_transmission_fail">Mybe network is bad, data transmission error!</string>
+    <string name="server_ip_non_exist">Failed to get IP, please input it manually!</string>
+    <string name="loading_tip">loading</string>
+    <string name="str_video_app_player">Video APP Player</string>
+    <string name="str_search">search</string>
+    <string name="str_image">Image</string>
+    <string name="str_music">Music</string>
+    <string name="str_bin_file">Bin File</string>
+    <string name="str_prompt">Prompt</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="str_not_connect_device">No device connected</string>
+    <string name="str_push_success">Push success!</string>
+    <string name="str_push_bin_file_tip">Are you sure you want to push it to the set-top box?</string>
+    <string name="str_app">APP</string>
+    <string name="str_url_link">URL Link</string>
+    <string name="str_about_app">About App</string>
+    <string name="str_already_connected">Already connected!</string>
+    <string name="str_not_online">Device not online!</string>
+    <string name="bin_file_download_tip">Only .bin files downloaded through a web browser can be searchable.</string>
+    <string name="str_no_content_available">No content available.</string>
+    <string name="str_history_devices">History devices</string>
+    <string name="str_history">History</string>
+    <string name="str_refresh">Refresh</string>
+</resources>

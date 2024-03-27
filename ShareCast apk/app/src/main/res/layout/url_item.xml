@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+        <import type="com.intelligent.share.R" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.video.UrlItemModel" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/device_item_height"
+        app:setSelected="@{viewModel.isSel}"
+        android:background="@drawable/device_bg_selector"
+        tools:context=".device.DeviceFragment">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            uri="@{viewModel.uri}"
+            error="@{R.drawable.video_webpage_icon}"
+            placeholder="@{R.drawable.video_webpage_icon}"
+            android:layout_marginStart="@dimen/margin_super_small" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginEnd="@dimen/margin_little"
+            android:layout_marginTop="@dimen/margin_super_tiny"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:layout_toStartOf="@+id/iv_cast_icon"
+            android:layout_centerVertical="true"
+            android:gravity="start"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/device_secondary_title_text_color_selector"
+            android:textSize="@dimen/text_size_micro"
+            tools:text="SN:SD4567J6789" />
+
+        <ImageView
+            android:id="@+id/iv_cast_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_super_little"
+            android:src="@drawable/video_share_cast" />
+
+    </RelativeLayout>
+</layout>

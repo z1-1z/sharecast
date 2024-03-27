@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".HomeFragment">
+
+        <com.tosmart.dlna.util.ScrollableViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="37dp"/>
+
+        <View
+            android:id="@+id/bottom_bar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar_bg_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tab_bg" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabUnboundedRipple="false"/>
+
+    </RelativeLayout>
+</layout>
+
+

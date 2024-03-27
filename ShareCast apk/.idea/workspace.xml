@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fee7bcfa-83fc-494b-ae45-7e05aad469f6" name="Changes" comment="[Add] add proguard.">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/socketthread/SocketSendThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/socketthread/UdpSocketReceiveBroadcastThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/EditLoginHistoryFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/GlobalConstantValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/MobileLoginInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/TranGlobalInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/parser/JsonParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/parser/XmlParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/color/device_secondary_title_text_color_selector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/mirrorlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/vlclib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/name.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/name.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-module.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-module.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-system-common.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-system-common.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-third-party.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-third-party.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/intelligent/screen/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/intelligent/share/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/base/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/base/BaseFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/base/ScreenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/base/ShareApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/bean/UrlLinkBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/bean/UrlLinkBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/bean/WebsiteItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/bean/WebsiteItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/bin/BinFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/bin/BinFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/bin/BinItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/bin/BinItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/bin/BinViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/bin/BinViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/binding/ViewBindingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/binding/ViewBindingAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/device/DeviceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/device/DeviceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/device/DeviceItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/device/DeviceItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/device/DeviceViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/device/DeviceViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/device/HistoryDeviceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/device/HistoryDeviceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/CastFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/CastFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/CastViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/CastViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/ImageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/ImageAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/LocalMediaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/LocalMediaFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/LocalMediaItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/LocalMediaItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/LocalMediaListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/LocalMediaListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/local/LocalMediaViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/local/LocalMediaViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/setting/AboutFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/setting/AboutFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/setting/AboutViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/setting/AboutViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/setting/SettingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/setting/SettingFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/setting/SettingItemViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/setting/SettingItemViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/setting/SettingViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/setting/SettingViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/socketthread/SocketReceiveThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/socketthread/SocketReceiveThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/socketthread/SocketSendThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/socketthread/UdpSocketReceiveBroadcastThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/tool/EmptyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/tool/EmptyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/tool/GlideUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/tool/GlideUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/tool/HistoryWordMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/tool/HistoryWordMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/tool/SpaceItemDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/tool/SpaceItemDecoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/tool/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/tool/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/AppFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/AppFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/AppItemViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/AppItemViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/AppViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/AppViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/UrlFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/UrlFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/UrlItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/UrlItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/UrlLinkViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/UrlLinkViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/VideoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/VideoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/video/WebFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/WebFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/web/BaseCastViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/web/BaseCastViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/web/BrowserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/web/BrowserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/web/WebViewManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/web/WebViewManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/widget/CommonTipWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/widget/CommonTipWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/intelligent/screen/widget/ObservableWebView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/intelligent/share/widget/ObservableWebView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/CreateSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/CreateSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/EditLoginHistoryFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GMScreenGlobalInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GlobalConstantValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GsConnectToSTB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/ConnectToDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GsEPGEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GsEPGTableChannel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GsMobileLoginInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/GsSendSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/SendSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/applist/entity/ApkInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/applist/entity/AppGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/applist/entity/CategoryInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/applist/entity/DownloadInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/applist/entity/PackageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertCastPlayInfoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/model/DataConvertCastPlayInfoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertCastPlayModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/model/DataConvertCastPlayModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertChannelModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertChannelTypeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertChatMsgModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertCommandResponseStyleModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertControlModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertDebugModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertEditChannelLockModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertFavChannelModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertFavorModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertGChatChannelInfoModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertInputMethodModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertMuteStateModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertOneDataModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertPvrInfoModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertRcuModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertSatModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertSortModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertStbInfoModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertTimeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertTpModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertUpdateModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/model/DataConvertUsernameModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/parser/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/parser/DataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/parser/JsonParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/parser/ParserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/parser/ParserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/dataconvert/parser/XmlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/gchat/bean/GChatLoginInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/gchat/bean/GsChatRoomInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/gchat/bean/GsChatSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/gchat/bean/GsChatUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/hisientry/HiMscreenConnectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/hisientry/HisiLibLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/message/process/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/message/process/MessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/player/TranscodeConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/util/AndroidDeviceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/util/AndroidDeviceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mktvsmart/screen/util/CommonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/smart/share/util/CommonHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/color/device_subtitle_text_color_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/devices_screen_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/devices_share_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/screen_cast_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/video_screen_cast.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/video_share_cast.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/bin_file_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/bin_file_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cast_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cast_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/common_tip_window.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/common_tip_window.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/device_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/device_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bin_file.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bin_file.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_device.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_device.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_device.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_device.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_local_media.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_local_media.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_local_media_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_local_media_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_setting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_url.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_url.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_video.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/local_media_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/local_media_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/local_music_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/local_music_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/local_video_control.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/local_video_control.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/setting_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/setting_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/url_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/url_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/url_video_control.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/url_video_control.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/video_control.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/video_control.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/web_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/web_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/libhisi.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/intelligent/screen/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/intelligent/share/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tosmart.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/MainViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/MainViewPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BaseDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BaseDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BaseFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BasePopupWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/base/BasePopupWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/Resource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/local/DlnaItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/local/DlnaItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/DeviceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/DeviceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/LibraryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/LibraryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/PlayInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/PlayListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/PlayListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmc/DMCControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmc/DMCControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmc/GetProtocolInfoCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmc/GetProtocolInfoCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmc/GetTransportInfoCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmc/GetTransportInfoCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmr/AVTransportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmr/AVTransportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmr/RenderPlayerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmr/ZxtMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dmr/ZxtMediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dms/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/dms/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/library/LibraryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/library/LibraryListAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/library/LibraryViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/library/LibraryViewModelFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/ImageAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/ImageDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/ImageDisplayViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/NowPlayingFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/NowPlayingViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/PlayControlService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/PlayStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/VideoDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/delegate/BasePlayControlInterfaceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/delegate/DlnaPlayControlDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/delegate/LocalAudioPlayControlDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/delegate/OtherPlayControlDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/nowplaying/delegate/PlayControlInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/playlist/PlayListAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/playlist/PlayListFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/playlist/PlayListParentFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/playlist/PlayListViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/playlist/PlayListViewModelFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/CommonToast.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/CommonToast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/ConfigureUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/ConfigureUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/InjectorUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/ResourceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/ResourceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/TaskThreadPoolExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/TaskThreadPoolExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/util/TimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/widget/CommonPopupWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/widget/CustomItemDecoration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/widget/CustomJzVideoPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/widget/CustomLinearLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/widget/RoundImageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/widget/SuperImageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/java/org/fourthline/cling/controlpoint/ActionCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/java/org/fourthline/cling/controlpoint/ActionCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/arrow_back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/circle_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/circle_unsel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/dlna_mute_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/empty_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/folder_icon_big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/folder_icon_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/forward_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/ic_del.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/ic_nofile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/ic_none.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/library_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/library_add_all.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/list_pop.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/more_ic_lpay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/music_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/mute_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/nav_library_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/nav_library_unsel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/nav_playing_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/nav_playing_unsel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/nav_playlist_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/nav_playlist_unsel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/pause_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_backward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/play_unlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/press_del_bg.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/progress_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/repeat_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/repeat_icon_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/replay_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/replay_icon_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/rewind_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/stop_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/stop_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/title_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/top_grid_layout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/top_list_layout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/video_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable-xhdpi/video_img_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/bottom_library_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/bottom_playing_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/bottom_playlist_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/circle_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/control_button_pressed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/control_button_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/item_pressed_bg_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/pop_window_list_item_bg_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/drawable/seek_bar_bg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/activity_video_display.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/bottom_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/common_pop_window.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/common_pop_window_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/fragment_play_list_parent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/image_display.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/image_list_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/jz_layout_custom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/library_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/library_grid_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/library_list_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/now_playing_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/play_list_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/play_list_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/video_display_control_lanscape.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/layout/video_display_control_portrait.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values-ar/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values-es/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values-fr/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values-pt/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values/arrays.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlna/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dlna/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/ScreenCast登录信息数据说明.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicindicator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScreenCast" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScreenCast" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScreenCast" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScreenCast" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="andresguard" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/dlna/build.gradle" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2b6bz48rcJuh6rvo0arNN7ySBzX" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android-custom-viewC:/Users/pc-001/.gradle/caches/modules-2/files-2.1/androidx.cardview/cardview/1.0.0/c9f3ce7ca74ad2c978230f4094ba6804c5166f9c/cardview-1.0.0-sources.jar!/androidx/cardview/widget/CardView.java_SELECTED" value="CardView" />
+    <property name="android-custom-viewC:/Users/pc-001/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/db045f92188b9d247d5f556866f8861ab68528f0/viewpager-1.0.0-sources.jar!/androidx/viewpager/widget/ViewPager.java_SELECTED" value="ViewPager" />
+    <property name="android-custom-viewD:/mk-project/screencast2/app/src/main/java/com/intelligent/screen/widget/ObservableWebView.java_SELECTED" value="ObservableWebView" />
+    <property name="android-custom-viewD:/mk-project/screencast2/app/src/main/java/mktvsmart/screen/hisientry/MirrorPageView.java_SELECTED" value="MirrorPageView" />
+    <property name="android-custom-viewD:/mk-project/screencast2/dlna/src/main/java/com/tosmart/dlna/util/ScrollableViewPager.java_SELECTED" value="ScrollableViewPager" />
+    <property name="android-custom-viewD:/mk-project/screencast2/dlna/src/main/java/com/tosmart/dlna/widget/CustomJzVideoPlayer.java_SELECTED" value="CustomJzVideoPlayer" />
+    <property name="android-custom-viewD:/mk-project/screencast2/dlna/src/main/java/com/tosmart/dlna/widget/CustomLinearLayout.java_SELECTED" value="CustomLinearLayout" />
+    <property name="android-custom-viewD:/mk-project/screencast2/dlna/src/main/java/com/tosmart/dlna/widget/RoundImageView.java_SELECTED" value="RoundImageView" />
+    <property name="android-custom-viewD:/mk-project/screencast2/dlna/src/main/java/com/tosmart/dlna/widget/SuperImageView.java_SELECTED" value="SuperImageView" />
+    <property name="android-custom-viewD:/mk-project/screencast2/magicindicator/src/main/java/net/lucode/hackware/magicindicator/MagicIndicator.java_SELECTED" value="MagicIndicator" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mk-project\screencast2\app\src\main\res\animator" />
+      <recent name="D:\mk-project\screencast2\app\src\main\res\anim" />
+      <recent name="D:\mk-project\screencast2\app" />
+      <recent name="D:\mk-project\screencast2\app\src\main\res\drawable" />
+      <recent name="D:\mk-project\screencast2\app\src\main\res\drawable-xhdpi" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intelligent.screen.device" />
+      <recent name="com.intelligent.screen.setting" />
+      <recent name="com.intelligent.screen.local" />
+      <recent name="com.intelligent.screen.bean" />
+      <recent name="com.intelligent.screen.video" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ShareCast.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="screencast2:app [resguardRelease]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="resguardRelease" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.screencast2:app [resguardRelease]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fee7bcfa-83fc-494b-ae45-7e05aad469f6" name="Changes" comment="" />
+      <created>1705538735360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705538735360</updated>
+    </task>
+    <task id="LOCAL-00001" summary="[Add] add dlna module and bottom nav.">
+      <created>1705539906060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705539906060</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Add] add device module.">
+      <created>1705884881080</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705884881080</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Add] add video app module.">
+      <created>1705916636923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705916636923</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Add] add video url link module.">
+      <created>1705973665015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705973665015</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Add] add local video module.">
+      <created>1706068518052</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706068518052</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Add] add setting and bin file module.">
+      <created>1706086343371</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706086343371</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Add] ajust some ui problem.">
+      <created>1706170702764</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706170702764</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Add] add about.">
+      <created>1706177156911</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706177156911</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[Add] add navigation animation.">
+      <created>1706236381382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706236381382</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[Fix] fixed parse result of like_platform_id incorrect.">
+      <created>1706261730268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706261730268</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[Fix] fixed can not receive some command for stb.">
+      <created>1706339883840</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706339883840</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[Mod] adjust local media cast page ui.">
+      <created>1706346473222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706346473222</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[Add] add bin files download tip.">
+      <created>1706576994228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706576994228</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[Fix] fixed bugs.">
+      <created>1706691299721</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706691299721</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[Add] add history connected device module.">
+      <created>1706696581357</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706696581357</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[Fix] 1.fixed anr sometimes.&#10;2.fixed vidio cast some video url incorrect. &#10;3.optimized device search animation.">
+      <created>1706766447704</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706766447704</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[Fix] fixed bugs">
+      <created>1707094122858</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707094122858</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[Add] add proguard.">
+      <created>1707128850108</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707128850108</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="2b2235ba-50b0-4805-8dd3-deda611bec39">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/mk-project/screencast2/dlna/src/main/res/layout" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="5c6e364a-7f89-4393-8aa0-c08e63025be4">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/mk-project/screencast2/app" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="2b2235ba-50b0-4805-8dd3-deda611bec39" value="TOOL_WINDOW" />
+        <entry key="5c6e364a-7f89-4393-8aa0-c08e63025be4" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Add] add dlna module and bottom nav." />
+    <MESSAGE value="[Add] add device module." />
+    <MESSAGE value="[Add] add video app module." />
+    <MESSAGE value="[Add] add video url link module." />
+    <MESSAGE value="[Add] add local video module." />
+    <MESSAGE value="[Add] add setting and bin file module." />
+    <MESSAGE value="[Add] ajust some ui problem." />
+    <MESSAGE value="[Add] add about." />
+    <MESSAGE value="[Add] add navigation animation." />
+    <MESSAGE value="[Fix] fixed parse result of like_platform_id incorrect." />
+    <MESSAGE value="[Fix] fixed can not receive some command for stb." />
+    <MESSAGE value="[Mod] adjust local media cast page ui." />
+    <MESSAGE value="[Add] add bin files download tip." />
+    <MESSAGE value="[Fix] fixed bugs." />
+    <MESSAGE value="[Add] add history connected device module." />
+    <MESSAGE value="[Fix] 1.fixed anr sometimes.&#10;2.fixed vidio cast some video url incorrect. &#10;3.optimized device search animation." />
+    <MESSAGE value="[Fix] fixed bugs" />
+    <MESSAGE value="[Add] add proguard." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] add proguard." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/smart/share/dataconvert/parser/XmlParser.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/intelligent/share/video/AppFragment.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/intelligent/share/socketthread/SocketReceiveThread.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/local/DlnaItemEntity.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
+          <url>file://$PROJECT_DIR$/dlna/src/main/java/com/tosmart/dlna/data/repository/LibraryRepository.java</url>
+          <line>154</line>
+          <properties class="com.tosmart.dlna.data.repository.LibraryRepository" method="getContentItemList">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.setting.SettingItemViewModel" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginStart="@dimen/margin_little"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:layout_marginEnd="@dimen/margin_little"
+        android:layout_marginBottom="@dimen/margin_tiny"
+        android:background="@drawable/device_bg_nor"
+        android:padding="@dimen/padding_super_little">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@{viewModel.icon}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:gravity="start"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/text_size_little" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_more_icon" />
+
+    </RelativeLayout>
+
+</layout>

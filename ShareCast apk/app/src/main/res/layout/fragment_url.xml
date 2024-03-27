@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils"/>
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.video.UrlLinkViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginEnd="@dimen/margin_little"
+            android:background="@drawable/url_edit_view_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/str_search"
+                android:imeOptions="actionSearch"
+                android:inputType="text|textNoSuggestions"
+                android:paddingStart="@dimen/padding_micro"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="@={viewModel.editTxt}"
+                android:textColor="@color/title_color"
+                android:textColorHint="@color/secondary_title_color_nor"
+                android:textSize="@dimen/text_size_super_little" />
+
+            <ImageView
+                android:id="@+id/iv_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_micro"
+                android:padding="@dimen/padding_tiny"
+                android:visibility="@{TextUtils.isEmpty(viewModel.editTxt) ? View.GONE : View.VISIBLE}"
+                android:src="@drawable/video_delete_icon" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_micro"
+                android:background="@drawable/video_cyan_button"
+                android:padding="@dimen/padding_tiny"
+                android:src="@drawable/video_search_icon" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_little"
+            android:layout_weight="1"
+            android:dividerHeight="@dimen/margin_little" />
+
+        <include
+            android:id="@+id/rl_bottom_bar"
+            android:visibility="@{viewModel.urlItems.size() > 0 ? View.VISIBLE : View.GONE}"
+            layout="@layout/url_video_control"
+            app:viewModel="@{viewModel}" />
+    </LinearLayout>
+</layout>

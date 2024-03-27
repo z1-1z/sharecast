@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.bin.BinViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:paddingTop="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:clickable="true"
+            android:src="@drawable/black_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MiddleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_bin_file" />
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_little"
+            android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}" />
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_refresh"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/text_size_supper_little"
+            android:layout_marginEnd="@dimen/margin_little"
+            android:layout_alignBaseline="@+id/tv_title"
+            android:visibility="@{viewModel.isLoading ? View.GONE : View.VISIBLE}" />
+
+        <RelativeLayout
+            android:id="@+id/ll_download_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:layout_marginEnd="@dimen/margin_little"
+            android:background="@drawable/tip_bg"
+            android:paddingStart="@dimen/margin_micro"
+            android:paddingTop="@dimen/padding_tiny"
+            android:paddingEnd="@dimen/margin_micro"
+            android:paddingBottom="@dimen/padding_tiny">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_super_tiny"
+                android:src="@drawable/tips_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_tiny"
+                android:layout_toEndOf="@+id/iv_icon"
+                android:text="@string/bin_file_download_tip"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/text_size_micro" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_download_tip"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginBottom="@dimen/margin_little" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/no_content_available"
+            android:drawablePadding="@dimen/padding_micro"
+            android:text="@string/str_no_content_available"
+            android:textColor="@color/secondary_title_color_nor"
+            android:layout_centerInParent="true"
+            android:visibility="@{viewModel.data.size() > 0 ? View.GONE : View.VISIBLE}" />
+
+    </RelativeLayout>
+</layout>

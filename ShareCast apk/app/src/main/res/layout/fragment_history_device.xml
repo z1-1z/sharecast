@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.device.DeviceViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:paddingTop="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_little"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:src="@drawable/black_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MiddleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_history_devices" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_devices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginBottom="@dimen/margin_little" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/no_content_available"
+            android:drawablePadding="@dimen/padding_micro"
+            android:text="@string/str_no_content_available"
+            android:textColor="@color/secondary_title_color_nor"
+            android:layout_centerInParent="true"
+            android:visibility="@{viewModel.historyConnectedDevice.size() > 0 ? View.GONE : View.VISIBLE}" />
+
+    </RelativeLayout>
+</layout>

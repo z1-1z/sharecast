@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intelligent.share.local.LocalMediaItemModel" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bin_file_item_height"
+        android:background="@drawable/device_bg_nor"
+        android:padding="@dimen/padding_super_little">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_music_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_super_micro"
+            android:layout_toStartOf="@+id/tv_size"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/text_size_little"
+                tool:text="Format File" />
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:textColor="@color/secondary_title_color_nor"
+                android:textSize="@dimen/text_size_micro"
+                tool:text="2023-05-06" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_micro"
+            android:layout_toStartOf="@+id/iv_arrow"
+            android:textColor="@color/secondary_title_color_nor"
+            android:textSize="@dimen/text_size_micro"
+            tool:text="3.9M" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_more_icon" />
+
+    </RelativeLayout>
+
+</layout>

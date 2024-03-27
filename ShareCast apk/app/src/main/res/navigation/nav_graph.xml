@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.intelligent.share.HomeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_castFragment"
+            app:destination="@id/castFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_binFragment"
+            app:destination="@id/binFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_HistoryDeviceFragment"
+            app:destination="@id/HistoryDeviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.intelligent.share.video.WebFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_web">
+
+        <argument android:name="webUrl" app:argType="string" android:defaultValue=""/>
+        <argument android:name="webMatch" app:argType="string" android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/castFragment"
+        android:name="com.intelligent.share.local.CastFragment"
+        tools:layout="@layout/fragment_cast">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/binFragment"
+        android:name="com.intelligent.share.bin.BinFragment"
+        tools:layout="@layout/fragment_bin_file">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AboutFragment"
+        android:name="com.intelligent.share.setting.AboutFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/HistoryDeviceFragment"
+        android:name="com.intelligent.share.device.HistoryDeviceFragment">
+
+    </fragment>
+</navigation>

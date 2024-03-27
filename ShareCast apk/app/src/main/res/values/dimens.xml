@@ -1,0 +1,71 @@
+<resources>
+    <!-- common text size -->
+    <dimen name="text_size_huge">60sp</dimen>
+    <dimen name="text_size_super_large">40sp</dimen>
+    <dimen name="text_size_large">36sp</dimen>
+    <dimen name="text_size_super_big">26sp</dimen>
+    <dimen name="text_size_big">24sp</dimen>
+    <dimen name="text_size_normal">22sp</dimen>
+    <dimen name="text_size_small">20sp</dimen>
+    <dimen name="text_size_super_small">18sp</dimen>
+    <dimen name="text_size_little">16sp</dimen>
+    <dimen name="text_size_supper_little">14sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_super_micro">9sp</dimen>
+
+
+    <!-- common margin -->
+    <dimen name="margin_super_huger">150dp</dimen>
+    <dimen name="margin_huger">120dp</dimen>
+    <dimen name="margin_super_super_huge">80dp</dimen>
+    <dimen name="margin_super_huge">70dp</dimen>
+    <dimen name="margin_huge">60dp</dimen>
+    <dimen name="margin_super_large">50dp</dimen>
+    <dimen name="margin_larger">45dp</dimen>
+    <dimen name="margin_large">40dp</dimen>
+    <dimen name="margin_super_big_v">35dp</dimen>
+    <dimen name="margin_big">30dp</dimen>
+    <dimen name="margin_normal">25dp</dimen>
+    <dimen name="margin_small">20dp</dimen>
+    <dimen name="margin_super_small">18dp</dimen>
+    <dimen name="margin_little">16dp</dimen>
+    <dimen name="margin_super_little">14dp</dimen>
+    <dimen name="margin_micro">10dp</dimen>
+    <dimen name="margin_super_micro">8dp</dimen>
+    <dimen name="margin_tiny">5dp</dimen>
+    <dimen name="margin_super_tiny">2dp</dimen>
+
+    <!-- common padding -->
+    <dimen name="padding_super_huger">160dp</dimen>
+    <dimen name="padding_super_huge">120dp</dimen>
+    <dimen name="padding_huge">100dp</dimen>
+    <dimen name="padding_large">80dp</dimen>
+    <dimen name="padding_big">65dp</dimen>
+    <dimen name="padding_normal_mid">60dp</dimen>
+    <dimen name="padding_normal">50dp</dimen>
+    <dimen name="padding_small">40dp</dimen>
+    <dimen name="padding_super_small">35dp</dimen>
+    <dimen name="padding_little_mid">30dp</dimen>
+    <dimen name="padding_little">20dp</dimen>
+    <dimen name="padding_super_little">16dp</dimen>
+    <dimen name="padding_micro">10dp</dimen>
+    <dimen name="padding_super_micro">8dp</dimen>
+    <dimen name="padding_tiny">5dp</dimen>
+    <dimen name="padding_super_tiny">2dp</dimen>
+    <dimen name="bottom_nav_item_height">58dp</dimen>
+    <dimen name="bottom_bar_bg_height">63dp</dimen>
+    <dimen name="bottom_bar_height">65dp</dimen>
+    <dimen name="device_item_height">67dp</dimen>
+    <dimen name="web_bottom_bar_height">99dp</dimen>
+    <dimen name="url_bottom_bar_height">70dp</dimen>
+    <dimen name="web_item_height">80dp</dimen>
+    <dimen name="local_video_nav_bar_height">32dp</dimen>
+    <dimen name="common_card_radius">10dp</dimen>
+    <dimen name="locaL_media_item_height">88dp</dimen>
+    <dimen name="locaL_media_item_label_height">21dp</dimen>
+    <dimen name="bin_file_item_height">67dp</dimen>
+    <dimen name="common_tip_window_width">296dp</dimen>
+    <dimen name="video_control_seek_bar_height">19dp</dimen>
+    <dimen name="video_control_seekbar_margin_top">19dp</dimen>
+    <dimen name="pb_loading_width">60dp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="min_voc">It is already the minimum volume.</string>
+    <string name="device_local">DroidDLNA Media Server</string>
+    <string name="player_name_local">DroidDLNA Local Render</string>
+
+</resources>
